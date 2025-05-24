@@ -1,0 +1,58 @@
+.header {
+  width: 100%;
+  background-color: #262626;
+  color: white;
+  padding: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+}
+
+.logo img {
+  height: 30px;
+  width: 140px;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.buy-now-btn {
+  background-color: #82b541;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.buy-now-btn:hover {
+  background-color: #6b9635;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 12px 16px;
+  }
+
+  .header-actions {
+    gap: 12px;
+  }
+
+  .buy-now-btn {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+}

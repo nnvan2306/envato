@@ -11,9 +11,11 @@ import Save from "./components/Save";
 import Sell from "./components/Sell";
 import Template from "./components/Template";
 import footer from "./assets/footer.jpg";
+import Header from "./components/Header";
 export default function App() {
     return (
-        <>
+        <div>
+            <Header />
             <Banner />
             <Template />
             <Integration />
@@ -25,7 +27,7 @@ export default function App() {
             <NineTemplates />
             <Making />
             <Save />
-            <img src={footer} alt="footer" />
-        </>
+            {/* <img src={footer} alt="footer" /> */}
+        </div>
     );
 }
