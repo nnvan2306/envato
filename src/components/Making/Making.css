@@ -1,0 +1,99 @@
+.review-slider {
+    position: relative;
+    padding: 80px 20px;
+    text-align: center;
+    color: #fff;
+    background: url("../../assets//marking.png") no-repeat center;
+    font-family: "Arial", sans-serif;
+    overflow: hidden;
+}
+
+.review-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.slogan {
+    position: relative;
+    font-size: 40px;
+    font-weight: 600;
+    opacity: 0.2;
+    z-index: 1;
+}
+
+.slogan span {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.review-title {
+    position: relative;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 20px 0;
+    z-index: 1;
+}
+
+.review-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.review-text {
+    min-height: 120px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.review-author {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.arrows {
+    position: relative;
+    margin-top: 40px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    max-width: 300px;
+    margin-inline: auto;
+}
+
+.arrow {
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.arrow:hover {
+    opacity: 0.7;
+}
+
+.dots {
+    margin-top: 20px;
+    z-index: 1;
+    position: relative;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 6px;
+    background: #fff;
+    border-radius: 50%;
+    opacity: 0.4;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.dot.active {
+    opacity: 1;
+}
