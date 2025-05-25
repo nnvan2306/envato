@@ -1,13 +1,52 @@
 #root {
-    margin: 0 !important;
-    padding: 0 !important;
+    margin    : 0 !important;
+    padding   : 0 !important;
+    box-sizing: border-box;
+}
+
+* {
     box-sizing: border-box;
 }
 
 body {
-    margin: 0 !important;
-    padding: 0 !important;
-    box-sizing: border-box;
+    margin     : 0 !important;
+    padding    : 0 !important;
+    box-sizing : border-box;
     font-family: "Arial", sans-serif;
-    overflow-x: hidden;
+    overflow-x : hidden;
+}
+
+
+.footer_wrapper {
+    position         : relative;
+    height           : calc(100vh - 60px);
+    background-image : url("./assets/footer.jpg");
+    background-size  : cover;
+    background-repeat: no-repeat;
+    display          : flex;
+    justify-content  : center;
+    align-items      : center;
+
+
+    h2 {
+        color      : #fff;
+        text-align : center;
+        font-size  : 80px;
+        font-weight: 700;
+
+        button {
+            padding      : 20px 40px;
+            border-radius: 10px;
+            outline      : none;
+            border       : 1px solid #ee4d2d;
+            font-weight  : 700;
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    .wrapper_app {
+        width   : 100vw;
+        overflow: hidden;
+    }
 }

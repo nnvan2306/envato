@@ -3,56 +3,78 @@
 }
 
 .template-title {
-    font-size: 48px;
+    font-size : 48px;
     text-align: center;
-    margin: 0;
+    margin    : 0;
 }
 
 .template-title .text {
     font-family: "Brush Script MT", cursive;
-    font-size: 60px;
-    color: #aaa;
+    font-size  : 60px;
+    color      : #aaa;
     margin-left: 8px;
 }
 
 .template-subtitle {
-    font-family: Arial, sans-serif;
-    font-size: 18px;
+    font-family   : Arial, sans-serif;
+    font-size     : 18px;
     letter-spacing: 2px;
-    text-align: center;
-    font-weight: bold;
-    color: #222;
-    margin-top: 8px;
+    text-align    : center;
+    font-weight   : bold;
+    color         : #222;
+    margin-top    : 8px;
 }
 
 .template {
-    padding-top: 60px;
-    display: flex;
+    padding-top    : 60px;
+    display        : flex;
     justify-content: center;
 }
 
 .grid {
-    display: grid;
+    display              : grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-    justify-content: center;
-    padding: 20px;
+    gap                  : 24px;
+    justify-content      : center;
+    padding              : 20px;
 }
 
 .card img {
     cursor: pointer;
     transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1),
         box-shadow 0.4s ease;
+    height       : 270px;
+    object-fit   : cover;
+    border       : 1px solid #ccc;
+    border-radius: 10px;
+    overflow     : hidden;
 }
 
 .card img:hover {
-    transform: translateY(-8px);
+    transform : translateY(-8px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
 .card p {
-    margin-top: 40px;
-    font-size: 18px;
+    margin-top : 40px;
+    font-size  : 18px;
     font-weight: 400;
-    text-align: center;
+    text-align : center;
+}
+
+@media (max-width: 575.98px) {
+    .grid {
+        width                : 100vw;
+        overflow             : hidden;
+        grid-template-columns: 1fr;
+    }
+
+    .template {
+        padding: 0 10px;
+
+        img {
+            border-radius: 10px;
+            overflow     : hidden;
+        }
+    }
 }

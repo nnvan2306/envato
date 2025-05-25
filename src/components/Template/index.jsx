@@ -1,20 +1,23 @@
-import "./Template.css";
-import t1 from "../../assets/template/main_home.jpg";
-import t2 from "../../assets/template/one_page.jpg";
+import t15 from "../../assets/template/artist_metro.jpg";
 import t3 from "../../assets/template/band_home.jpg";
-import t4 from "../../assets/template/home_alt.jpg";
-import t5 from "../../assets/template/minimal.jpg";
+import t14 from "../../assets/template/blog_home.jpg";
+import t12 from "../../assets/template/discography_home.jpg";
 import t6 from "../../assets/template/dj_event.jpg";
 import t7 from "../../assets/template/festival.jpg";
-import t8 from "../../assets/template/record_studio.jpg";
+import t4 from "../../assets/template/home_alt.jpg";
 import t9 from "../../assets/template/interactive_links.jpg";
-import t10 from "../../assets/template/main_home.jpg";
+import {
+    default as t1,
+    default as t10,
+} from "../../assets/template/main_home.jpg";
+import t5 from "../../assets/template/minimal.jpg";
+import t2 from "../../assets/template/one_page.jpg";
+import t8 from "../../assets/template/record_studio.jpg";
 import t11 from "../../assets/template/shop_home.jpg";
-import t12 from "../../assets/template/discography_home.jpg";
 import t13 from "../../assets/template/videos_home.jpg";
-import t14 from "../../assets/template/blog_home.jpg";
-import t15 from "../../assets/template/artist_metro.jpg";
 import { handleBlank } from "../../helpers/blank";
+import FadeInUpBox from "../FadeInUp/FadeInUp";
+import "./Template.css";
 
 const template = [
     {
@@ -107,14 +110,20 @@ const Template = () => {
                 <div className="grid">
                     {template.map((item, index) => {
                         return (
-                            <div className="card" key={index}>
-                                <img
-                                    alt="template"
-                                    src={item.image}
-                                    onClick={() => handleBlank(item.link)}
-                                />
-                                <p>{item.title}</p>
-                            </div>
+                            <FadeInUpBox
+                                duration={0.5}
+                                ease={"easeIn"}
+                                key={index}
+                            >
+                                <div className="card">
+                                    <img
+                                        alt="template"
+                                        src={item.image}
+                                        onClick={() => handleBlank(item.link)}
+                                    />
+                                    <p>{item.title}</p>
+                                </div>
+                            </FadeInUpBox>
                         );
                     })}
                 </div>
