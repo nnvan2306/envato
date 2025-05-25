@@ -29,7 +29,14 @@ export default function App() {
             <Features />
             <Making />
             <Save />
-            {/* <img src={footer} alt="footer" /> */}
+            <img
+                src={footer}
+                alt="footer"
+                style={{
+                    maxWidth: "100vw",
+                    objectFit: "cover",
+                }}
+            />
         </div>
     );
 }
