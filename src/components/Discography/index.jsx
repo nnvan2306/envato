@@ -17,6 +17,7 @@ import d13 from "../../assets/discography/d13.jpg";
 import d14 from "../../assets/discography/d14.jpg";
 import d15 from "../../assets/discography/d15.jpg";
 import d16 from "../../assets/discography/d16.jpg";
+import andMore from "../../assets/discography/and_more.png";
 
 const Discography = () => {
     const [activeTab, setActiveTab] = useState("single");
@@ -54,6 +55,10 @@ const Discography = () => {
             title: "Minimal",
             image: d8,
         },
+        {
+            title: "",
+            image: andMore,
+        },
     ];
 
     const listingPages = [
@@ -88,6 +93,10 @@ const Discography = () => {
         {
             title: "Carousel",
             image: d16,
+        },
+        {
+            title: "",
+            image: andMore,
         },
     ];
 
@@ -141,6 +150,8 @@ const Discography = () => {
                     ))}
                 </div>
             </div>
+
+            <p className="and-more">and more…</p>
         </div>
     );
 };
