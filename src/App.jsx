@@ -13,8 +13,6 @@ import Template from "./components/Template";
 import footer from "./assets/footer.jpg";
 import Header from "./components/Header";
 import Features from "./components/Features";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 export default function App() {
     return (

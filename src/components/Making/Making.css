@@ -15,8 +15,9 @@
 }
 
 .slogan {
+    font-family: "Brush Script MT", cursive;
     position: relative;
-    font-size: 40px;
+    font-size: 60px;
     font-weight: 600;
     opacity: 0.2;
     z-index: 1;
