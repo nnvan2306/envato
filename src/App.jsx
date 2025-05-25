@@ -12,6 +12,7 @@ import Sell from "./components/Sell";
 import Template from "./components/Template";
 import footer from "./assets/footer.jpg";
 import Header from "./components/Header";
+import Features from "./components/Features";
 export default function App() {
     return (
         <div>
@@ -25,6 +26,7 @@ export default function App() {
             <Easy />
             <Sell />
             <NineTemplates />
+            <Features />
             <Making />
             <Save />
             {/* <img src={footer} alt="footer" /> */}

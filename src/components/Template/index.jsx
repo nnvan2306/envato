@@ -99,7 +99,6 @@ const Template = () => {
         <div className="form">
             <section className="template-section">
                 <h2 className="template-title">
-                    {/* <span className="number">15</span>{" "} */}
                     <span className="text">15 Templates</span>
                 </h2>
                 <p className="template-subtitle">HOMEPAGES</p>

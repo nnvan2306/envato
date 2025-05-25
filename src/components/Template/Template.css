@@ -1,57 +1,58 @@
 .form {
-  padding: 120px 0;
+    padding: 120px 0;
 }
 
 .template-title {
-  font-size: 48px;
-  text-align: center;
-  margin: 0;
+    font-size: 48px;
+    text-align: center;
+    margin: 0;
 }
 
 .template-title .text {
-  font-family: "Brush Script MT", cursive;
-  font-size: 60px;
-  color: #aaa;
-  margin-left: 8px;
+    font-family: "Brush Script MT", cursive;
+    font-size: 60px;
+    color: #aaa;
+    margin-left: 8px;
 }
 
 .template-subtitle {
-  font-family: Arial, sans-serif;
-  font-size: 18px;
-  letter-spacing: 2px;
-  text-align: center;
-  font-weight: bold;
-  color: #222;
-  margin-top: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: bold;
+    color: #222;
+    margin-top: 8px;
 }
 
 .template {
-  padding-top: 60px;
-  display: flex;
-  justify-content: center;
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  justify-content: center;
-  padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    justify-content: center;
+    padding: 20px;
 }
 
 .card img {
-  cursor: pointer;
-  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.4s ease;
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1),
+        box-shadow 0.4s ease;
 }
 
 .card img:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
 .card p {
-  margin-top: 40px;
-  font-size: 18px;
-  font-weight: 400;
-  text-align: center;
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
 }
